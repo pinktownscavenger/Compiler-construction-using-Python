@@ -2,8 +2,8 @@
 ## Grammar Rules
 The grammar for the language supported by the parser is as follows:
 
- Markup : * Operators: Addition (+), Subtraction (-), Multiplication (*), Division (/)
-          * Functions: Trigonometric functions (sin, cos, tan), Square root (sqrt)
+* Operators: Addition (+), Subtraction (-), Multiplication (*), Division (/)
+* Functions: Trigonometric functions (sin, cos, tan), Square root (sqrt)
           * Variables: Single-letter variables (x, y, z)
           * Parentheses: Open and close parentheses for grouping expressions
 
