@@ -1,11 +1,34 @@
 # Milestone 1: Input Handling Implementation
 ## Grammar Rules
 The grammar for the language supported by the parser is as follows:
-
-* Operators: Addition (+), Subtraction (-), Multiplication (*), Division (/)
-* Functions: Trigonometric functions (sin, cos, tan), Square root (sqrt)
-* Variables: Single-letter variables (x, y, z)
-* Parentheses: Open and close parentheses for grouping expressions
+* **Operators**: Addition (+), Subtraction (-), Multiplication (*), Division (/)
+    * Valid Expressions:
+        * `3 * (4 - 2)`
+        * `x / 2`
+    * Invalid Expressions:
+        * `2 +`
+        * `3 ** 2`
+* **Functions**: Trigonometric functions (sin, cos, tan), Square root (sqrt)
+    * Valid Expressions:
+        * `sin(pi/6)`
+        * `cos(0) * 2`
+    * Invalid Expressions:
+        * `sqrt(-1)`
+        * `tan(x) +`
+* **Variables**: Single-letter variables (x, y, z)
+    * Valid Expressions:
+        * `x + y`
+        * `2 * z`
+    * Invalid Expressions:
+        * `x y`
+        * `xy`
+* **Parentheses**: Open and close parentheses for grouping expressions
+    * Valid Expressions:
+        * `(x + 2) * 3`
+        * `sqrt(4) * (y - 1)`
+    * Invalid Expressions:
+        * `2 + (3 * 4`
+        * `sqrt(2 + )`
 
 ## Input Handling Implementation
 * Prompt User Input: A function or method prompts the user to enter an arithmetic expression.
