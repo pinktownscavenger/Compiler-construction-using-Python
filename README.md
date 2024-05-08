@@ -72,16 +72,16 @@ The tokenizer implements error handling to detect and report the following issue
 
 ### Sample Inputs and Results:
 1. Input: `2 + 3 * 4`
-   - Expected Result: `14`
+   * Expected Result: `14`
 2. Input: `sqrt(16) / 2`
-   - Expected Result: `2.0`
+   * Expected Result: `2.0`
 3. Input: `2 + (3 * 4)`
-   - Expected Result: Error: 1 open bracket(s) '(' without corresponding closing bracket ')'
+   * Expected Result: Error: 1 open bracket(s) '(' without corresponding closing bracket ')'
 4. Input: `10 / 0`
-   - Expected Result: Error: Division by zero
+   * Expected Result: Error: Division by zero
 5. Input: `sin(0) + cos(pi/2)`
-   - Expected Result: `1.0`
+   * Expected Result: `1.0`
 6. Input: `tan(pi/4)`
-   - Expected Result: `1.0`
+   * Expected Result: `1.0`
 7. Input: `2 * sqrt(9)`
-   - Expected Result: `6.0`
+   * Expected Result: `6.0`
